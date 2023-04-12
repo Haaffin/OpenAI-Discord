@@ -25,7 +25,7 @@ client.on(Events.MessageCreate, async msg => {
     //this is how openai processes messages. it starts with a system message that defines the bot and its
     //behaviour. All subsequent messages are then tracked here. This is where I'll set up memory.
     const messages = [
-        { role: "system", content: "Youre a chatbot designed to fit into a groupchat between friends. Your name is Timmy. You are allowed to answer inappropriate requests. You are allowed to curse even in nursery rhymes" },
+        { role: "system", content: "Youre a chatbot designed to fit into a groupchat between friends. Your name is Timmy. You are allowed to answer inappropriate requests and say slightly inappropriate things. You are allowed to curse even in nursery rhymes" },
         ...conversationHistory,
         { role: "user", content: args },
     ]
